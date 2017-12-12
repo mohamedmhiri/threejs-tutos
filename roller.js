@@ -94,6 +94,9 @@ function createScene(){
     document.onkeydown = handleKeyDown;
 
     scoreText = document.createElement('div');
+    scoreText.style.color = '#5f5f5f'
+    scoreText.style.fontFamily = 'Arial'
+    scoreText.style.fontSize = '40px'
     scoreText.style.position = 'absolute';
     //text2.style.zIndex = 1;    // if you still don't see the label, try uncommenting this
     scoreText.style.width = 100;
@@ -109,7 +112,7 @@ function createScene(){
     infoText.style.width = 100;
     infoText.style.height = 100;
     infoText.style.backgroundColor = "yellow";
-    infoText.innerHTML = "UP - Jump, Left/Right - Move";
+    //infoText.innerHTML = "UP - Jump, Left/Right - Move";
     infoText.style.top = 10 + 'px';
     infoText.style.left = 10 + 'px';
     document.body.appendChild(infoText);
